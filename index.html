@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="tp-angular">
+  <head>
+    <title>TP Angular JS</title>
+ 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="scripts/services/exif-restorer.js"></script>
+    <script src="scripts/services/webStorage.js"></script>
+    <script src="scripts/services/angularService.js"></script>
+    <script src="scripts/controllers/GlobalController.js"></script>
+    <script src="scripts/controllers/LoginController.js"></script>
+    <script src="scripts/controllers/PhotoResultController.js"></script>
+    <script src="scripts/controllers/HistoryController.js"></script>
+    <script src="scripts/directives/camera.js"></script>
+
+
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+
+  </head>
+
+
+  <body ng-controller="GlobalCtrl">
+
+    <div ng-include="'partials/menu.html'"></div>
+
+    <div ng-show="isLoading" class="loading grid-24 l-gutter-top"> 
+      <div class="grid-24 u-align-center no-gutter l-gutter-top">
+        <i class="t-color-light fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+      </div>
+    </div>
+
+    <div class="main-view" data-ng-view></div>
+
+  </body>
+
+</html>

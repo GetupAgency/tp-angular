@@ -1,0 +1,15 @@
+<div class="grid-24 u-align-center no-gutter" style="margin-top:100px;">
+        <div ng-repeat="result in history track by $index">
+            <div class="grid-24">
+                <img ng-src="{{result.base64Photo}}" width="200">
+            </div>
+            <div class="grid-24 gutter-top" ng-repeat="res in result.data.responses[0].labelAnnotations">
+                <div class="grid-12">
+                    {{res.description}}
+                </div>
+                <div class="grid-12">
+                        {{res.score}}
+                 </div>
+            </div>
+        </div>
+</div>

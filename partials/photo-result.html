@@ -1,0 +1,33 @@
+<div class="grid-24 u-align-center no-gutter">
+                <div class="grid-24 u-align-center paintingDescription no-gutter">
+                        <img class="user-photo" ng-src="{{pictureBase64}}" />
+                </div>
+                <div class="grid-24 u-align-left gutter-top">
+                        <div class="highlight grid-24 no-gutter">
+                                <div class="grid-15">
+                                        <p class="auth-paint">Best Matching</p>
+                                        <p class="title-paint">{{googleResult[0].description}}</p>
+                                </div>
+                                <div class="grid-9">
+                                        <p class="auth-paint">Probability</p>
+                                        <p class="title-paint">{{formatNumber(googleResult[0].score) + '%'}}</p>
+                                </div>
+        
+                        </div>
+                </div>
+                <div class="grid-24 gutter-top u-align-left gutter-bottom">
+                        <div class="highlight grid-24 no-gutter">
+                                <div class="grid-24 no-gutter" ng-class="{'gutter-top' : $index != 1}" ng-repeat="resp in googleResult" ng-if="$index >= 1">
+                                        <div class="grid-15 no-gutter-right">
+                                                <p class="auth-paint">Detected</p>
+                                                <p class="title-paint">{{resp.description}}</p>
+                                        </div>
+                                        <div class="grid-9">
+                                                <p class="auth-paint">Probability</p>
+                                                <p class="title-paint">{{formatNumber(resp.score) + '%'}}</p>
+                                        </div>
+                                </div>
+        
+                        </div>
+                </div>
+        </div>

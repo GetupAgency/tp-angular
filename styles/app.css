@@ -1,0 +1,2861 @@
+.credits {
+  position: absolute;
+  font-size: 10px;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'CrimsonText-Bold';  
+}
+.highlight{
+  border: 1px solid black;
+  padding: 10px 0 10px 0;
+}
+
+/* line 56, ../libs/gridle/sass/gridle/_silent-classes.scss */
+.push-0, .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24, .push-tablet-0, .push-tablet-1, .push-tablet-2, .push-tablet-3, .push-tablet-4, .push-tablet-5, .push-tablet-6, .push-tablet-7, .push-tablet-8, .push-tablet-9, .push-tablet-10, .push-tablet-11, .push-tablet-12, .push-tablet-13, .push-tablet-14, .push-tablet-15, .push-tablet-16, .push-tablet-17, .push-tablet-18, .push-tablet-19, .push-tablet-20, .push-tablet-21, .push-tablet-22, .push-tablet-23, .push-tablet-24, .push-desktop-0, .push-desktop-1, .push-desktop-2, .push-desktop-3, .push-desktop-4, .push-desktop-5, .push-desktop-6, .push-desktop-7, .push-desktop-8, .push-desktop-9, .push-desktop-10, .push-desktop-11, .push-desktop-12, .push-desktop-13, .push-desktop-14, .push-desktop-15, .push-desktop-16, .push-desktop-17, .push-desktop-18, .push-desktop-19, .push-desktop-20, .push-desktop-21, .push-desktop-22, .push-desktop-23, .push-desktop-24, .pull-0, .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24, .pull-tablet-0, .pull-tablet-1, .pull-tablet-2, .pull-tablet-3, .pull-tablet-4, .pull-tablet-5, .pull-tablet-6, .pull-tablet-7, .pull-tablet-8, .pull-tablet-9, .pull-tablet-10, .pull-tablet-11, .pull-tablet-12, .pull-tablet-13, .pull-tablet-14, .pull-tablet-15, .pull-tablet-16, .pull-tablet-17, .pull-tablet-18, .pull-tablet-19, .pull-tablet-20, .pull-tablet-21, .pull-tablet-22, .pull-tablet-23, .pull-tablet-24, .pull-desktop-0, .pull-desktop-1, .pull-desktop-2, .pull-desktop-3, .pull-desktop-4, .pull-desktop-5, .pull-desktop-6, .pull-desktop-7, .pull-desktop-8, .pull-desktop-9, .pull-desktop-10, .pull-desktop-11, .pull-desktop-12, .pull-desktop-13, .pull-desktop-14, .pull-desktop-15, .pull-desktop-16, .pull-desktop-17, .pull-desktop-18, .pull-desktop-19, .pull-desktop-20, .pull-desktop-21, .pull-desktop-22, .pull-desktop-23, .pull-desktop-24 {
+  position: relative; }
+
+/* line 59, ../libs/gridle/sass/gridle/_silent-classes.scss */
+.container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.u-align-center {
+  text-align: center; 
+}
+.u-align-left {
+  text-align: left; 
+}
+/* line 64, ../libs/gridle/sass/gridle/_silent-classes.scss */
+.parent, .parent-tablet, .parent-desktop {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 90, ../libs/gridle/sass/gridle/_silent-classes.scss */
+.grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24, .grid-tablet-0, .grid-tablet-1, .grid-tablet-2, .grid-tablet-3, .grid-tablet-4, .grid-tablet-5, .grid-tablet-6, .grid-tablet-7, .grid-tablet-8, .grid-tablet-9, .grid-tablet-10, .grid-tablet-11, .grid-tablet-12, .grid-tablet-13, .grid-tablet-14, .grid-tablet-15, .grid-tablet-16, .grid-tablet-17, .grid-tablet-18, .grid-tablet-19, .grid-tablet-20, .grid-tablet-21, .grid-tablet-22, .grid-tablet-23, .grid-tablet-24, .grid-desktop-0, .grid-desktop-1, .grid-desktop-2, .grid-desktop-3, .grid-desktop-4, .grid-desktop-5, .grid-desktop-6, .grid-desktop-7, .grid-desktop-8, .grid-desktop-9, .grid-desktop-10, .grid-desktop-11, .grid-desktop-12, .grid-desktop-13, .grid-desktop-14, .grid-desktop-15, .grid-desktop-16, .grid-desktop-17, .grid-desktop-18, .grid-desktop-19, .grid-desktop-20, .grid-desktop-21, .grid-desktop-22, .grid-desktop-23, .grid-desktop-24, .l-list-123 > li {
+  display: inline-block;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Str replace
+ *
+ * @param {string}  $string    String that you want to replace
+ * @param {string}  $substr    String that is to be replaced by `$newsubstr`
+ * @param {string}  $newsubstr String that replaces `$substr`
+ * @param {number*} $all       Flag for replaceing all (1+) or not (0)
+ * @return {string}
+ */
+/**
+ * Map set
+ *
+ * @param 	Map 	$map 		The map to use
+ * @param 	String 	$key 		The key to update
+ * @param 	Mixed 	$value 		The new value
+ * @return 	Map 			The new map
+ */
+/**
+ * Get the column width in percent for the global or a specific context
+ *
+ * @param 	int 		$columns 					The number of columns to calculate
+ * @param 	int 		$context : $gridle-columns-count 	 	The context to use
+ * @return 	percentage 							The width in percent
+ */
+/**
+ *  Get a state map
+ *
+ * @param 	string 		$name 		The name of the state to get
+ * @return 	map 				A state map object
+ */
+/**
+ * Check if a state exist :
+ *
+ * @param 	string 		$name 		The name of the state to check
+ * @return 	Boolean 			true is exist
+ */
+/**
+ * Get the media queries variables :
+ *
+ * @param 	int 		$index 	 	The media query indes
+ * @param 	String 		$var 		The media query variable name
+ * @return 	String|int 			The variable value
+ */
+/**
+ * Get a variable
+ *
+ * @param 	String 		$varName 				The variable name
+ * @param  	String 		$stateMap-or-stateName 	 	The state name or a map state value
+ * @return 	Mixed 							The finded value
+ */
+/**
+ * Set a variable in a state
+ * @param 	Mixed $stateName-or-stateIndex 	The state name of state index
+ * @param  	String $var                    		Variable name to assign
+ * @param  	Mixed $newValue          		The new value to assign
+ * @return 	List                         			The states list (full)
+ */
+/**
+ * Generate a column
+ *
+ * @param 	String 		$name 			The column name (often count)
+ * @param 	int 		$columns 		The column count that the column will take
+ * @param 	int 		$context 		The context on witch the with will be calculed
+ * @param 	Boolean 	$generateClasses 	Set if the column has to be generated in css
+ */
+/**
+ * Generate classname
+ *
+ * @param 	List 		$parrern 	The pattern to use to generate classname
+ * @param 	String 		$state 		The state
+ * @param 	int 		$count 		The column count
+ */
+/**
+ * Get the media query for a particular state, or with, etc...
+ *
+ * @param 	Mixed 		$state-or-min-width 		The state name of the min with
+ * @param 	Mixed 		$max-width 			The max width if first param is a min width
+ * @return 	String 						The media query string without the @media
+ */
+/**
+ * Get states count
+ * 
+ * @return 	int 	The number of states defined
+ */
+/**
+ * Setup
+ */
+/**
+ *  Register a clear each class
+ */
+/**
+ * Register a special class
+ */
+/**
+ * Register default states
+ */
+/**
+ * Register default mobile first states :
+ */
+/**
+ * Set the debug device (not used for now)
+ * 
+ * @param 	String 		$state 		The state to update
+ * @para m 	String 		$device 	The device to use (iphone, etc...)
+ */
+/**
+ * Parent clear each
+ */
+/**
+ * Vertical align :
+ */
+/**
+ * Show inline
+ *
+ * @param 	String 		$state 		The state name
+ */
+/**
+ * Generate a custom class for all the states
+ *
+ * @param 	list 	$pattern 		The name pattern of the class
+ * @param 	list 	$statesNames 		The states names to generate
+ */
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: device-width; } }
+/* line 306, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+#gridle-settings {
+  content: '{ "version" : "1.3.35", "states" : { "retina":{ "query" : "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)", "classes" : false, "name" : "retina", "_gridle" : true }, "tv":{ "query" : "only tv", "classes" : false, "name" : "tv", "_gridle" : true }, "print":{ "query" : "only print", "classes" : false, "name" : "print", "_gridle" : true }, "portrait":{ "query" : "only screen and (orientation: portrait)", "classes" : false, "name" : "portrait", "_gridle" : true }, "landscape":{ "query" : "only screen and (orientation: landscape)", "classes" : false, "name" : "landscape", "_gridle" : true }, "default":{ "name" : "default", "min-width" : null, "max-width" : null, "query" : null, "classes" : true, "context" : "24", "gutter-width" : "30px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "tablet":{ "name" : "tablet", "min-width" : "481px", "max-width" : null, "query" : "screen and (min-width: 481px)", "classes" : true, "context" : "24", "gutter-width" : "30px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }, "desktop":{ "name" : "desktop", "min-width" : "768px", "max-width" : null, "query" : "screen and (min-width: 768px)", "classes" : true, "context" : "24", "gutter-width" : "30px", "direction" : "ltr", "name-multiplicator" : "1", "debug" : false, "debug-show-class-names" : true, "ie7-support" : false, "html-states-classes" : false, "generate-push-classes" : true, "generate-pull-classes" : true, "generate-prefix-classes" : true, "generate-suffix-classes" : true, "generate-helpers-classes" : true, "_gridle" : true }} }'; }
+
+/* line 502, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24, .grid-tablet-0, .grid-tablet-1, .grid-tablet-2, .grid-tablet-3, .grid-tablet-4, .grid-tablet-5, .grid-tablet-6, .grid-tablet-7, .grid-tablet-8, .grid-tablet-9, .grid-tablet-10, .grid-tablet-11, .grid-tablet-12, .grid-tablet-13, .grid-tablet-14, .grid-tablet-15, .grid-tablet-16, .grid-tablet-17, .grid-tablet-18, .grid-tablet-19, .grid-tablet-20, .grid-tablet-21, .grid-tablet-22, .grid-tablet-23, .grid-tablet-24, .grid-desktop-0, .grid-desktop-1, .grid-desktop-2, .grid-desktop-3, .grid-desktop-4, .grid-desktop-5, .grid-desktop-6, .grid-desktop-7, .grid-desktop-8, .grid-desktop-9, .grid-desktop-10, .grid-desktop-11, .grid-desktop-12, .grid-desktop-13, .grid-desktop-14, .grid-desktop-15, .grid-desktop-16, .grid-desktop-17, .grid-desktop-18, .grid-desktop-19, .grid-desktop-20, .grid-desktop-21, .grid-desktop-22, .grid-desktop-23, .grid-desktop-24 {
+  float: left;
+  direction: ltr;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-0 {
+  width: 0%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-0 {
+  left: 0%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-0 {
+  right: 0%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-0 {
+  margin-left: 0%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-0 {
+  margin-right: 0%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-1 {
+  width: 4.16667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-1 {
+  left: 4.16667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-1 {
+  right: 4.16667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-1 {
+  margin-left: 4.16667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-1 {
+  margin-right: 4.16667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-2 {
+  width: 8.33333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-2 {
+  left: 8.33333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-2 {
+  right: 8.33333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-2 {
+  margin-left: 8.33333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-2 {
+  margin-right: 8.33333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-3 {
+  width: 12.5%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-3 {
+  left: 12.5%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-3 {
+  right: 12.5%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-3 {
+  margin-left: 12.5%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-3 {
+  margin-right: 12.5%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-4 {
+  width: 16.66667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-4 {
+  left: 16.66667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-4 {
+  right: 16.66667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-4 {
+  margin-left: 16.66667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-4 {
+  margin-right: 16.66667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-5 {
+  width: 20.83333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-5 {
+  left: 20.83333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-5 {
+  right: 20.83333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-5 {
+  margin-left: 20.83333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-5 {
+  margin-right: 20.83333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-6 {
+  width: 25%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-6 {
+  left: 25.0%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-6 {
+  right: 25.0%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-6 {
+  margin-left: 25.0%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-6 {
+  margin-right: 25.0%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-7 {
+  width: 29.16667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-7 {
+  left: 29.16667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-7 {
+  right: 29.16667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-7 {
+  margin-left: 29.16667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-7 {
+  margin-right: 29.16667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-8 {
+  width: 33.33333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-8 {
+  left: 33.33333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-8 {
+  right: 33.33333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-8 {
+  margin-left: 33.33333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-8 {
+  margin-right: 33.33333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-9 {
+  width: 37.5%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-9 {
+  left: 37.5%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-9 {
+  right: 37.5%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-9 {
+  margin-left: 37.5%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-9 {
+  margin-right: 37.5%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-10 {
+  width: 41.66667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-10 {
+  left: 41.66667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-10 {
+  right: 41.66667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-10 {
+  margin-left: 41.66667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-10 {
+  margin-right: 41.66667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-11 {
+  width: 45.83333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-11 {
+  left: 45.83333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-11 {
+  right: 45.83333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-11 {
+  margin-left: 45.83333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-11 {
+  margin-right: 45.83333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-12 {
+  width: 50%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-12 {
+  left: 50.0%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-12 {
+  right: 50.0%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-12 {
+  margin-left: 50.0%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-12 {
+  margin-right: 50.0%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-13 {
+  width: 54.16667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-13 {
+  left: 54.16667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-13 {
+  right: 54.16667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-13 {
+  margin-left: 54.16667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-13 {
+  margin-right: 54.16667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-14 {
+  width: 58.33333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-14 {
+  left: 58.33333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-14 {
+  right: 58.33333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-14 {
+  margin-left: 58.33333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-14 {
+  margin-right: 58.33333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-15 {
+  width: 62.5%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-15 {
+  left: 62.5%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-15 {
+  right: 62.5%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-15 {
+  margin-left: 62.5%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-15 {
+  margin-right: 62.5%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-16 {
+  width: 66.66667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-16 {
+  left: 66.66667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-16 {
+  right: 66.66667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-16 {
+  margin-left: 66.66667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-16 {
+  margin-right: 66.66667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-17 {
+  width: 70.83333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-17 {
+  left: 70.83333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-17 {
+  right: 70.83333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-17 {
+  margin-left: 70.83333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-17 {
+  margin-right: 70.83333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-18 {
+  width: 75%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-18 {
+  left: 75.0%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-18 {
+  right: 75.0%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-18 {
+  margin-left: 75.0%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-18 {
+  margin-right: 75.0%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-19 {
+  width: 79.16667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-19 {
+  left: 79.16667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-19 {
+  right: 79.16667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-19 {
+  margin-left: 79.16667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-19 {
+  margin-right: 79.16667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-20 {
+  width: 83.33333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-20 {
+  left: 83.33333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-20 {
+  right: 83.33333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-20 {
+  margin-left: 83.33333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-20 {
+  margin-right: 83.33333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-21 {
+  width: 87.5%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-21 {
+  left: 87.5%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-21 {
+  right: 87.5%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-21 {
+  margin-left: 87.5%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-21 {
+  margin-right: 87.5%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-22 {
+  width: 91.66667%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-22 {
+  left: 91.66667%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-22 {
+  right: 91.66667%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-22 {
+  margin-left: 91.66667%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-22 {
+  margin-right: 91.66667%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-23 {
+  width: 95.83333%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-23 {
+  left: 95.83333%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-23 {
+  right: 95.83333%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-23 {
+  margin-left: 95.83333%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-23 {
+  margin-right: 95.83333%; }
+
+/* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.grid-24 {
+  width: 100%; }
+
+/* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.push-24 {
+  left: 100.0%; }
+
+/* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.pull-24 {
+  right: 100.0%; }
+
+/* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.prefix-24 {
+  margin-left: 100.0%; }
+
+/* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.suffix-24 {
+  margin-right: 100.0%; }
+
+/* line 62, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.float-left {
+  float: left; }
+
+/* line 65, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.float-right {
+  float: right; }
+
+/* line 71, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.clear {
+  clear: both; }
+
+/* line 74, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.clear-left {
+  clear: left; }
+
+/* line 77, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.clear-right {
+  clear: right; }
+
+/* line 83, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.no-gutter,
+.no-margin {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 87, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.no-gutter-left,
+.no-margin-left {
+  padding-left: 0; }
+
+/* line 91, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.no-gutter-right,
+.no-margin-right {
+  padding-right: 0; }
+
+/* line 95, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.no-gutter-top,
+.no-margin-top {
+  padding-top: 0; }
+
+/* line 99, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.no-gutter-bottom,
+.no-margin-bottom {
+  padding-bottom: 0; }
+
+/* line 106, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.gutter,
+.margins {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+/* line 110, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.gutter-left,
+.margin-left {
+  padding-left: 15px; }
+
+/* line 114, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.gutter-right,
+.margin-right {
+  padding-right: 15px; }
+
+/* line 118, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.gutter-top,
+.margin-top {
+  padding-top: 15px; }
+
+.l-gutter-top {
+  padding-top: 30px; }
+
+.l-gutter-bottom {
+  padding-bottom: 30px; }
+
+/* line 122, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.gutter-bottom,
+.margin-bottom {
+  padding-bottom: 15px; }
+
+/* line 129, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.auto-height {
+  height: inherit; }
+
+/* line 135, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.centered {
+  display: block !important;
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  clear: both !important; }
+
+/* line 141, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.parent {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 147, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.vertical-align-middle {
+  font-size: 0;
+  clear: both; }
+
+/* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+.vertical-align-middle > * {
+  display: inline-block;
+  float: none !important;
+  vertical-align: middle;
+  font-size: 1rem; }
+
+/* line 150, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.vertical-align-top {
+  font-size: 0;
+  clear: both; }
+
+/* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+.vertical-align-top > * {
+  display: inline-block;
+  float: none !important;
+  vertical-align: top;
+  font-size: 1rem; }
+
+/* line 153, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.vertical-align-bottom {
+  font-size: 0;
+  clear: both; }
+
+/* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+.vertical-align-bottom > * {
+  display: inline-block;
+  float: none !important;
+  vertical-align: bottom;
+  font-size: 1rem; }
+
+/**
+ * Visible, hide, etc...
+ */
+/* line 162, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.hide {
+  display: none; }
+
+/* line 168, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.not-visible {
+  visibility: hidden; }
+
+/* line 174, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.show {
+  display: block; }
+
+/* line 177, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.show-inline {
+  display: inline-block; }
+
+/* line 183, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+.visible {
+  visibility: visible; }
+
+/**
+ * Clear each class :
+ */
+@media screen and (min-width: 481px) {
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-0 {
+    width: 0%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-0 {
+    left: 0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-0 {
+    right: 0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-0 {
+    margin-left: 0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-0 {
+    margin-right: 0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-1 {
+    width: 4.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-1 {
+    left: 4.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-1 {
+    right: 4.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-1 {
+    margin-left: 4.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-1 {
+    margin-right: 4.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-2 {
+    width: 8.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-2 {
+    left: 8.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-2 {
+    right: 8.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-2 {
+    margin-left: 8.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-2 {
+    margin-right: 8.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-3 {
+    width: 12.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-3 {
+    left: 12.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-3 {
+    right: 12.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-3 {
+    margin-left: 12.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-3 {
+    margin-right: 12.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-4 {
+    width: 16.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-4 {
+    left: 16.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-4 {
+    right: 16.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-4 {
+    margin-left: 16.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-4 {
+    margin-right: 16.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-5 {
+    width: 20.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-5 {
+    left: 20.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-5 {
+    right: 20.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-5 {
+    margin-left: 20.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-5 {
+    margin-right: 20.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-6 {
+    width: 25%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-6 {
+    left: 25.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-6 {
+    right: 25.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-6 {
+    margin-left: 25.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-6 {
+    margin-right: 25.0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-7 {
+    width: 29.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-7 {
+    left: 29.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-7 {
+    right: 29.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-7 {
+    margin-left: 29.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-7 {
+    margin-right: 29.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-8 {
+    width: 33.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-8 {
+    left: 33.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-8 {
+    right: 33.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-8 {
+    margin-left: 33.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-8 {
+    margin-right: 33.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-9 {
+    width: 37.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-9 {
+    left: 37.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-9 {
+    right: 37.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-9 {
+    margin-left: 37.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-9 {
+    margin-right: 37.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-10 {
+    width: 41.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-10 {
+    left: 41.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-10 {
+    right: 41.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-10 {
+    margin-left: 41.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-10 {
+    margin-right: 41.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-11 {
+    width: 45.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-11 {
+    left: 45.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-11 {
+    right: 45.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-11 {
+    margin-left: 45.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-11 {
+    margin-right: 45.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-12 {
+    width: 50%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-12 {
+    left: 50.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-12 {
+    right: 50.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-12 {
+    margin-left: 50.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-12 {
+    margin-right: 50.0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-13 {
+    width: 54.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-13 {
+    left: 54.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-13 {
+    right: 54.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-13 {
+    margin-left: 54.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-13 {
+    margin-right: 54.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-14 {
+    width: 58.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-14 {
+    left: 58.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-14 {
+    right: 58.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-14 {
+    margin-left: 58.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-14 {
+    margin-right: 58.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-15 {
+    width: 62.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-15 {
+    left: 62.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-15 {
+    right: 62.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-15 {
+    margin-left: 62.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-15 {
+    margin-right: 62.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-16 {
+    width: 66.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-16 {
+    left: 66.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-16 {
+    right: 66.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-16 {
+    margin-left: 66.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-16 {
+    margin-right: 66.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-17 {
+    width: 70.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-17 {
+    left: 70.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-17 {
+    right: 70.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-17 {
+    margin-left: 70.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-17 {
+    margin-right: 70.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-18 {
+    width: 75%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-18 {
+    left: 75.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-18 {
+    right: 75.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-18 {
+    margin-left: 75.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-18 {
+    margin-right: 75.0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-19 {
+    width: 79.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-19 {
+    left: 79.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-19 {
+    right: 79.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-19 {
+    margin-left: 79.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-19 {
+    margin-right: 79.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-20 {
+    width: 83.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-20 {
+    left: 83.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-20 {
+    right: 83.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-20 {
+    margin-left: 83.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-20 {
+    margin-right: 83.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-21 {
+    width: 87.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-21 {
+    left: 87.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-21 {
+    right: 87.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-21 {
+    margin-left: 87.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-21 {
+    margin-right: 87.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-22 {
+    width: 91.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-22 {
+    left: 91.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-22 {
+    right: 91.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-22 {
+    margin-left: 91.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-22 {
+    margin-right: 91.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-23 {
+    width: 95.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-23 {
+    left: 95.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-23 {
+    right: 95.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-23 {
+    margin-left: 95.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-23 {
+    margin-right: 95.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-tablet-24 {
+    width: 100%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-tablet-24 {
+    left: 100.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-tablet-24 {
+    right: 100.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-tablet-24 {
+    margin-left: 100.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-tablet-24 {
+    margin-right: 100.0%; }
+
+  /* line 62, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .float-tablet-left {
+    float: left; }
+
+  /* line 65, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .float-tablet-right {
+    float: right; }
+
+  /* line 71, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .clear-tablet {
+    clear: both; }
+
+  /* line 74, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .clear-tablet-left {
+    clear: left; }
+
+  /* line 77, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .clear-tablet-right {
+    clear: right; }
+
+  /* line 83, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-tablet,
+  .no-margin-tablet {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* line 87, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-tablet-left,
+  .no-margin-tablet-left {
+    padding-left: 0; }
+
+  /* line 91, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-tablet-right,
+  .no-margin-tablet-right {
+    padding-right: 0; }
+
+  /* line 95, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-tablet-top,
+  .no-margin-tablet-top {
+    padding-top: 0; }
+
+  /* line 99, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-tablet-bottom,
+  .no-margin-tablet-bottom {
+    padding-bottom: 0; }
+
+  /* line 106, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-tablet,
+  .margins-tablet {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  /* line 110, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-tablet-left,
+  .margin-tablet-left {
+    padding-left: 15px; }
+
+  /* line 114, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-tablet-right,
+  .margin-tablet-right {
+    padding-right: 15px; }
+
+  /* line 118, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-tablet-top,
+  .margin-tablet-top {
+    padding-top: 15px; }
+
+  /* line 122, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-tablet-bottom,
+  .margin-tablet-bottom {
+    padding-bottom: 15px; }
+
+  /* line 129, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .auto-height-tablet {
+    height: inherit; }
+
+  /* line 135, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .centered-tablet {
+    display: block !important;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    clear: both !important; }
+
+  /* line 141, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .parent-tablet {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* line 147, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .vertical-align-tablet-middle {
+    font-size: 0;
+    clear: both; }
+
+  /* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+  .vertical-align-tablet-middle > * {
+    display: inline-block;
+    float: none !important;
+    vertical-align: middle;
+    font-size: 1rem; }
+
+  /* line 150, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .vertical-align-tablet-top {
+    font-size: 0;
+    clear: both; }
+
+  /* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+  .vertical-align-tablet-top > * {
+    display: inline-block;
+    float: none !important;
+    vertical-align: top;
+    font-size: 1rem; }
+
+  /* line 153, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .vertical-align-tablet-bottom {
+    font-size: 0;
+    clear: both; }
+
+  /* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+  .vertical-align-tablet-bottom > * {
+    display: inline-block;
+    float: none !important;
+    vertical-align: bottom;
+    font-size: 1rem; }
+
+  /**
+   * Visible, hide, etc...
+   */
+  /* line 162, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .hide-tablet {
+    display: none; }
+
+  /* line 168, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .not-visible-tablet {
+    visibility: hidden; }
+
+  /* line 174, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .show-tablet {
+    display: block; }
+
+  /* line 177, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .show-inline-tablet {
+    display: inline-block; }
+
+  /* line 183, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .visible-tablet {
+    visibility: visible; }
+
+  /**
+   * Clear each class :
+   */ }
+@media screen and (min-width: 768px) {
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-0 {
+    width: 0%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-0 {
+    left: 0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-0 {
+    right: 0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-0 {
+    margin-left: 0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-0 {
+    margin-right: 0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-1 {
+    width: 4.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-1 {
+    left: 4.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-1 {
+    right: 4.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-1 {
+    margin-left: 4.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-1 {
+    margin-right: 4.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-2 {
+    width: 8.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-2 {
+    left: 8.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-2 {
+    right: 8.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-2 {
+    margin-left: 8.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-2 {
+    margin-right: 8.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-3 {
+    width: 12.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-3 {
+    left: 12.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-3 {
+    right: 12.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-3 {
+    margin-left: 12.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-3 {
+    margin-right: 12.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-4 {
+    width: 16.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-4 {
+    left: 16.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-4 {
+    right: 16.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-4 {
+    margin-left: 16.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-4 {
+    margin-right: 16.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-5 {
+    width: 20.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-5 {
+    left: 20.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-5 {
+    right: 20.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-5 {
+    margin-left: 20.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-5 {
+    margin-right: 20.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-6 {
+    width: 25%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-6 {
+    left: 25.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-6 {
+    right: 25.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-6 {
+    margin-left: 25.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-6 {
+    margin-right: 25.0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-7 {
+    width: 29.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-7 {
+    left: 29.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-7 {
+    right: 29.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-7 {
+    margin-left: 29.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-7 {
+    margin-right: 29.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-8 {
+    width: 33.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-8 {
+    left: 33.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-8 {
+    right: 33.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-8 {
+    margin-left: 33.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-8 {
+    margin-right: 33.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-9 {
+    width: 37.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-9 {
+    left: 37.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-9 {
+    right: 37.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-9 {
+    margin-left: 37.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-9 {
+    margin-right: 37.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-10 {
+    width: 41.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-10 {
+    left: 41.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-10 {
+    right: 41.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-10 {
+    margin-left: 41.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-10 {
+    margin-right: 41.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-11 {
+    width: 45.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-11 {
+    left: 45.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-11 {
+    right: 45.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-11 {
+    margin-left: 45.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-11 {
+    margin-right: 45.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-12 {
+    width: 50%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-12 {
+    left: 50.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-12 {
+    right: 50.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-12 {
+    margin-left: 50.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-12 {
+    margin-right: 50.0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-13 {
+    width: 54.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-13 {
+    left: 54.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-13 {
+    right: 54.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-13 {
+    margin-left: 54.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-13 {
+    margin-right: 54.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-14 {
+    width: 58.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-14 {
+    left: 58.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-14 {
+    right: 58.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-14 {
+    margin-left: 58.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-14 {
+    margin-right: 58.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-15 {
+    width: 62.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-15 {
+    left: 62.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-15 {
+    right: 62.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-15 {
+    margin-left: 62.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-15 {
+    margin-right: 62.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-16 {
+    width: 66.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-16 {
+    left: 66.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-16 {
+    right: 66.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-16 {
+    margin-left: 66.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-16 {
+    margin-right: 66.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-17 {
+    width: 70.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-17 {
+    left: 70.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-17 {
+    right: 70.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-17 {
+    margin-left: 70.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-17 {
+    margin-right: 70.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-18 {
+    width: 75%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-18 {
+    left: 75.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-18 {
+    right: 75.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-18 {
+    margin-left: 75.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-18 {
+    margin-right: 75.0%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-19 {
+    width: 79.16667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-19 {
+    left: 79.16667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-19 {
+    right: 79.16667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-19 {
+    margin-left: 79.16667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-19 {
+    margin-right: 79.16667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-20 {
+    width: 83.33333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-20 {
+    left: 83.33333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-20 {
+    right: 83.33333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-20 {
+    margin-left: 83.33333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-20 {
+    margin-right: 83.33333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-21 {
+    width: 87.5%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-21 {
+    left: 87.5%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-21 {
+    right: 87.5%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-21 {
+    margin-left: 87.5%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-21 {
+    margin-right: 87.5%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-22 {
+    width: 91.66667%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-22 {
+    left: 91.66667%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-22 {
+    right: 91.66667%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-22 {
+    margin-left: 91.66667%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-22 {
+    margin-right: 91.66667%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-23 {
+    width: 95.83333%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-23 {
+    left: 95.83333%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-23 {
+    right: 95.83333%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-23 {
+    margin-left: 95.83333%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-23 {
+    margin-right: 95.83333%; }
+
+  /* line 591, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .grid-desktop-24 {
+    width: 100%; }
+
+  /* line 596, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .push-desktop-24 {
+    left: 100.0%; }
+
+  /* line 601, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .pull-desktop-24 {
+    right: 100.0%; }
+
+  /* line 606, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .prefix-desktop-24 {
+    margin-left: 100.0%; }
+
+  /* line 611, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .suffix-desktop-24 {
+    margin-right: 100.0%; }
+
+  /* line 62, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .float-desktop-left {
+    float: left; }
+
+  /* line 65, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .float-desktop-right {
+    float: right; }
+
+  /* line 71, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .clear-desktop {
+    clear: both; }
+
+  /* line 74, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .clear-desktop-left {
+    clear: left; }
+
+  /* line 77, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .clear-desktop-right {
+    clear: right; }
+
+  /* line 83, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-desktop,
+  .no-margin-desktop {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* line 87, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-desktop-left,
+  .no-margin-desktop-left {
+    padding-left: 0; }
+
+  /* line 91, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-desktop-right,
+  .no-margin-desktop-right {
+    padding-right: 0; }
+
+  /* line 95, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-desktop-top,
+  .no-margin-desktop-top {
+    padding-top: 0; }
+
+  /* line 99, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .no-gutter-desktop-bottom,
+  .no-margin-desktop-bottom {
+    padding-bottom: 0; }
+
+  /* line 106, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-desktop,
+  .margins-desktop {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  /* line 110, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-desktop-left,
+  .margin-desktop-left {
+    padding-left: 15px; }
+
+  /* line 114, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-desktop-right,
+  .margin-desktop-right {
+    padding-right: 15px; }
+
+  /* line 118, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-desktop-top,
+  .margin-desktop-top {
+    padding-top: 15px; }
+
+  /* line 122, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .gutter-desktop-bottom,
+  .margin-desktop-bottom {
+    padding-bottom: 15px; }
+
+  /* line 129, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .auto-height-desktop {
+    height: inherit; }
+
+  /* line 135, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .centered-desktop {
+    display: block !important;
+    float: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    clear: both !important; }
+
+  /* line 141, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .parent-desktop {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* line 147, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .vertical-align-desktop-middle {
+    font-size: 0;
+    clear: both; }
+
+  /* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+  .vertical-align-desktop-middle > * {
+    display: inline-block;
+    float: none !important;
+    vertical-align: middle;
+    font-size: 1rem; }
+
+  /* line 150, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .vertical-align-desktop-top {
+    font-size: 0;
+    clear: both; }
+
+  /* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+  .vertical-align-desktop-top > * {
+    display: inline-block;
+    float: none !important;
+    vertical-align: top;
+    font-size: 1rem; }
+
+  /* line 153, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .vertical-align-desktop-bottom {
+    font-size: 0;
+    clear: both; }
+
+  /* line 618, ../libs/gridle/sass/gridle/_mixins.scss */
+  .vertical-align-desktop-bottom > * {
+    display: inline-block;
+    float: none !important;
+    vertical-align: bottom;
+    font-size: 1rem; }
+
+  /**
+   * Visible, hide, etc...
+   */
+  /* line 162, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .hide-desktop {
+    display: none; }
+
+  /* line 168, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .not-visible-desktop {
+    visibility: hidden; }
+
+  /* line 174, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .show-desktop {
+    display: block; }
+
+  /* line 177, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .show-inline-desktop {
+    display: inline-block; }
+
+  /* line 183, ../libs/gridle/sass/gridle/_generate-mixins.scss */
+  .visible-desktop {
+    visibility: visible; } }
+@-webkit-keyframes spin {
+  to {
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn); } }
+@-moz-keyframes spin {
+  to {
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn); } }
+@-ms-keyframes spin {
+  to {
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn); } }
+@keyframes spin {
+  to {
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn); } }
+/* line 8, ../sass/modules/_spinner.sass */
+.spinner {
+  position: absolute;
+  display: inline-block;
+  top: 25%;
+  left: 43%;
+  width: 5em;
+  height: 5em;
+  margin: 0 0.5em;
+  font-size: 12px;
+  text-indent: 999em;
+  overflow: hidden;
+  -o-animation: spin 1s infinite steps(8);
+  -moz-animation: spin 1s infinite steps(8);
+  -webkit-animation: spin 1s infinite steps(8);
+  animation: spin 1s infinite steps(8);
+  font-size: 6px; }
+
+/* line 20, ../sass/modules/_spinner.sass */
+.spinner--center {
+  display: block;
+  margin: 30px auto; }
+
+/* line 24, ../sass/modules/_spinner.sass */
+.spinner:before,
+.spinner:after,
+.spinner > div:before,
+.spinner > div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2.25em;
+  width: 0.5em;
+  height: 1.5em;
+  border-radius: 0.2em;
+  background: #eee;
+  -moz-box-shadow: 0 3.5em #eee;
+  -webkit-box-shadow: 0 3.5em #eee;
+  box-shadow: 0 3.5em #eee;
+  -webkit-transform-origin: 50% 2.5em;
+  -moz-transform-origin: 50% 2.5em;
+  -ms-transform-origin: 50% 2.5em;
+  -o-transform-origin: 50% 2.5em; }
+
+/* line 42, ../sass/modules/_spinner.sass */
+.spinner:before {
+  background: #555; }
+
+/* line 45, ../sass/modules/_spinner.sass */
+.spinner:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: #777; }
+
+/* line 49, ../sass/modules/_spinner.sass */
+.spinner > div:before {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  background: #999; }
+
+/* line 53, ../sass/modules/_spinner.sass */
+.spinner > div:after {
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  background: #bbb; }
+
+.login {
+  padding-top: 75px;
+  max-width: 100%; }
+  .login h2 {
+    text-align: center; }
+  .login h5 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 15px 0 5px 0; }
+  .login a {
+    color: black; }
+  .login h3 {
+    font-family: 'CrimsonText-Bold';
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 19.6px; }
+  .login p {
+    font-size: 14px;
+    margin-top: 0; }
+
+/*
+
+.ul-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #218daa;
+    margin-bottom: 10px;
+    
+    li {
+        border-bottom: 1px solid #fff;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #306D7D;
+    }
+}
+*/
+.menu ul {
+  padding-bottom: 5px;
+  padding-top: 5px; }
+.menu img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px; }
+
+.ul-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000; }
+  .ul-menu li {
+    float: left; }
+  .ul-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; }
+  .ul-menu li a:hover {
+    background-color: #111; }
+
+@font-face {
+  font-family: "CrimsonText-Bold";
+  src: url("fonts/CrimsonText-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "CrimsonText-Regular";
+  src: url("fonts/CrimsonText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Lato-Light";
+  src: url("fonts/Lato-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/*************/
+.acc-42 {
+  color: black !important; }
+
+.accordion-paint .collapsible-item {
+  box-shadow: none !important;
+  border-bottom: solid 1px black; }
+
+.like, .like1 {
+  width: 38px;
+  height: 25px;
+  font-size: larger;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -10px;
+  margin-left: 50%;
+  transform: translate(-50%, 0%); }
+
+.shape {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -13px;
+  margin-left: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  -moz-border-radius: 17.5px;
+  -webkit-border-radius: 17.5px;
+  border-radius: 17.5px;
+  transform: translate(-50%, 0%); }
+
+.like::after {
+  font-family: 'flaticon';
+  color: #000000;
+  content: "\f105"; }
+
+.like1::after {
+  font-family: 'flaticon';
+  color: #000000;
+  content: "\f104"; }
+
+.cover-tableau {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 50%;
+  transform: translate(-50%, 0%); }
+
+.div-tab {
+  padding-left: 5px;
+  padding-right: 5px; }
+  .div-tab span {
+    font-family: 'lato-Light';
+    color: black;
+    font-size: 13px; }
+
+/*******/
+.description-paint {
+  text-align: center;
+  padding: 0 30px 30px 30px;
+  color: rgba(85, 85, 85, 0.8);
+  opacity: 0.8;
+  font-family: 'Lato-Light';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.56; }
+
+.title-paint {
+  text-transform: uppercase;
+  margin: 0;
+  font-family: 'CrimsonText-Bold';
+  font-size: 19.6px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #000000;
+ }
+
+.title-paint-date {
+  font-family: 'CrimsonText-Regular';
+  font-size: 19.6px;
+  line-height: 1.69;
+  letter-spacing: 0.7px;
+  color: #000000;
+  font-weight: 500; }
+
+.title-paint-date-pipe {
+  font-family: 'CrimsonText-Regular';
+  font-size: 19.6px;
+  line-height: 1.69;
+  letter-spacing: 1.5px;
+  color: #000000; }
+
+.auth-paint {
+  margin: 0;
+  font-family: 'Lato-Regular';
+  font-size: 14.8px;
+  line-height: 1.46;
+  color: #535353; }
+
+.accordion-paint {
+  color: white; }
+
+.enable a i {
+  color: #F2F2F2 !important; }
+
+.disable a i {
+  color: #5C5C5C !important; }
+
+.accordion {
+  width: 100%; }
+
+.logged {
+  position: absolute;
+  font-size: 8px;
+  color: #326832 !important; }
+
+.recommendation {
+  padding-top: 70px;
+  padding-left: 25px; }
+  .recommendation h2 {
+    font-family: "CrimsonText-Regular"; }
+
+.loading {
+  position: fixed;
+  z-index: 2;
+  top: 65px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8; }
+  .loading h1 {
+    margin-top: 50%; }
+  .loading i {
+    margin-top: -10px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100vh;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 5px solid white;
+  margin: 5px; }
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; }
+  .modal-content h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "CrimsonText-Regular";
+    margin-top: 0;
+    font-size: 20px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white; }
+  .modal-content p {
+    text-align: justify;
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.modal-header {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: right;
+  width: 100%;
+  height: 50px; }
+
+/* The Close Button */
+.close {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  float: right;
+  line-height: 50px; }
+
+.paint-title-desc {
+  font-size: 25px; }
+
+.title-modal {
+  font-weight: 300;
+  font-size: 18px; }
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+
+.form__text,
+.form__text-small {
+  width: 260px;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 10px 0 10px 10px;
+  margin: 0;
+  font-size: 12px;
+  -moz-transition: ease 0.5s border-color;
+  -o-transition: ease 0.5s border-color;
+  -webkit-transition: ease 0.5s border-color;
+  transition: ease 0.5s border-color;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #393939; }
+
+/* line 30, ../sass/mixins/_texts.sass */
+.form__text:-moz-placeholder,
+.form__text-small:-moz-placeholder {
+  color: black;
+  opacity: 1; }
+
+.form__text:-ms-input-placeholder,
+.form__text-small:-ms-input-placeholder {
+  color: black; }
+
+.form__text::-webkit-input-placeholder,
+.form__text-small::-webkit-input-placeholder {
+  color: black; }
+
+.form__text:focus,
+.form__text-small:focus {
+  outline: none;
+  border-color: #22d694; }
+
+.form__text.ng-invalid,
+.form__text-small.ng-invalid {
+  border-color: #ea5134; }
+
+.form__text[readonly],
+.form__text-small[readonly] {
+  border-color: #e4e4e4;
+  background-color: #f8f8f8;
+  color: rgba(0, 0, 0, 0.5); }
+
+.form__text-small {
+  padding: 5px 8px;
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.button {
+  letter-spacing: 0.1em;
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: none;
+  font-size: 11px;
+  font-size: 1.1rem;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 15px 28px;
+  text-transform: uppercase;
+  line-height: 10px;
+  line-height: 1rem;
+  font-weight: 300; }
+
+.button:hover {
+  text-decoration: none; }
+
+.no-touch .button:hover {
+  background-color: #b0b0b0;
+  color: #fff; }
+
+.button-facebook {
+  letter-spacing: 0.1em;
+  position: relative;
+  background-color: #385a9a;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  font-size: 11px;
+  font-size: 1.1rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 15px 28px;
+  text-transform: uppercase;
+  line-height: 10px;
+  line-height: 1rem;
+  font-weight: 700; }
+
+.button--large {
+  font-size: 12px !important;
+  width: 260px;
+  padding: 11px 0px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+
+.no-border {
+  padding: 0;
+  border: none;
+  background: none; }
+
+.home {
+  width: 100%;
+  min-height: -webkit-fill-available;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center center;
+  overflow-y: hidden;
+  background-image: url("../images/bg-home.jpg");
+  background-attachment: fixed; }
+
+.mmlogo {
+  margin-top: 90px; }
+
+.marty {
+  max-width: 150px; }
+
+.lorem {
+  bottom: 0;
+  margin: 20px 20px 50px 20px;
+  text-align: justify;
+  color: white;
+  font-size: 12px; }
+
+/*
+.gutter-perso{
+    margin-bottom: 10px;
+}
+*/
+.lorem .collapsible-item {
+  box-shadow: none; }
+.lorem .sep {
+  background-color: white;
+  width: 100%;
+  height: 1px; }
+.lorem .acc-41 {
+  padding-left: 0px !important;
+  text-align: left; }
+.lorem .icon {
+  float: right;
+  padding-right: 0px !important;
+  width: 5px !important; }
+
+.collapsible-item {
+  margin-bottom: 10px;
+  box-shadow: -10px 0px 18px 0 rgba(0, 0, 0, 0.21); }
+  .collapsible-item .acc-1 {
+    background-color: #252525; }
+  .collapsible-item .acc-4 {
+    background-color: #181818; }
+  .collapsible-item .acc-2 {
+    background-color: #363636; }
+  .collapsible-item .acc-3 {
+    background-color: #555555; }
+
+.collapsible-item .title {
+  font-family: 'Lato-Light';
+  padding: 10px;
+  text-align: left !important;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 16.9px !important;
+  font-weight: 300 !important;
+  color: #ffffff; }
+
+.collapsible-item .title .icon {
+  float: right;
+  height: 20px;
+  width: 20px;
+  font-size: 15px !important;
+  padding-right: 1px; }
+
+.collapsible-item .title .iconleft {
+  float: left !important; }
+
+.collapsible-item .title.disabled {
+  background: #eee;
+  color: #999;
+  cursor: text; }
+
+.collapsible-item > .body {
+  position: relative;
+  top: -4px;
+  max-height: 0;
+  overflow: hidden;
+  border-top: 0;
+  z-index: -1;
+  -webkit-transition: max-height 0.3s ease-in-out;
+  -moz-transition: max-height 0.3s ease-in-out;
+  -o-transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out; }
+
+.collapsible-item > .body .content {
+  padding: 20px 0px 15px 0px;
+  text-align: left; }
+
+.collapsible-item.open > .body {
+  max-height: 1000px;
+  z-index: 1; }
+
+body {
+  font: 100% "Lato", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  border: 1 px solid #000000; }
+
+.main-view {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */ }
+
+.t-color-light {
+  color: #ffffff; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.main .btn-block {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #000000; }
+
+.paintingDescription {
+  padding-top: 65px;
+  position: relative; }
+  .paintingDescription .user-photo {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    object-fit: contain; }
+
+.header {
+  width: 100%;
+  height: 56px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background: #333;
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.ng-scope {
+  margin: 0px 0px 0px 0px; }
+
+.compression {
+  display: none; }
+
+/*# sourceMappingURL=app.css.map */

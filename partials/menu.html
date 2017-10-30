@@ -1,0 +1,12 @@
+<div class="menu">
+  <ul class="ul-menu grid-24 u-align-center no-gutter">
+      <li class="grid-8 {{home}}"><a ng-click="changePath(1)"><i class=" flaticon-home-icon-silhouette"></i></a></li>
+      <li class="grid-8">
+        <camera jpeg-quality="50" crop-width="20" crop-height="20" ng-show="!isUploading" class=" {{photo}} camera" on-select="getPhoto(photo)"></camera>
+      </li>
+      <li class="grid-8 {{user}}">
+      <a ng-click="changePath(3)">
+        <i  class="flaticon-forum-user"></i>
+      </a>
+    </ul>
+</div>
