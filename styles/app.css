@@ -10,7 +10,16 @@
   border: 1px solid black;
   padding: 10px 0 10px 0;
 }
-
+.loadingDiv {
+  padding-top: 33vh;
+}
+.pointer {
+  cursor: pointer;
+}
+.stats {
+  padding-top: 75px;
+  position: relative;
+}
 /* line 56, ../libs/gridle/sass/gridle/_silent-classes.scss */
 .push-0, .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24, .push-tablet-0, .push-tablet-1, .push-tablet-2, .push-tablet-3, .push-tablet-4, .push-tablet-5, .push-tablet-6, .push-tablet-7, .push-tablet-8, .push-tablet-9, .push-tablet-10, .push-tablet-11, .push-tablet-12, .push-tablet-13, .push-tablet-14, .push-tablet-15, .push-tablet-16, .push-tablet-17, .push-tablet-18, .push-tablet-19, .push-tablet-20, .push-tablet-21, .push-tablet-22, .push-tablet-23, .push-tablet-24, .push-desktop-0, .push-desktop-1, .push-desktop-2, .push-desktop-3, .push-desktop-4, .push-desktop-5, .push-desktop-6, .push-desktop-7, .push-desktop-8, .push-desktop-9, .push-desktop-10, .push-desktop-11, .push-desktop-12, .push-desktop-13, .push-desktop-14, .push-desktop-15, .push-desktop-16, .push-desktop-17, .push-desktop-18, .push-desktop-19, .push-desktop-20, .push-desktop-21, .push-desktop-22, .push-desktop-23, .push-desktop-24, .pull-0, .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24, .pull-tablet-0, .pull-tablet-1, .pull-tablet-2, .pull-tablet-3, .pull-tablet-4, .pull-tablet-5, .pull-tablet-6, .pull-tablet-7, .pull-tablet-8, .pull-tablet-9, .pull-tablet-10, .pull-tablet-11, .pull-tablet-12, .pull-tablet-13, .pull-tablet-14, .pull-tablet-15, .pull-tablet-16, .pull-tablet-17, .pull-tablet-18, .pull-tablet-19, .pull-tablet-20, .pull-tablet-21, .pull-tablet-22, .pull-tablet-23, .pull-tablet-24, .pull-desktop-0, .pull-desktop-1, .pull-desktop-2, .pull-desktop-3, .pull-desktop-4, .pull-desktop-5, .pull-desktop-6, .pull-desktop-7, .pull-desktop-8, .pull-desktop-9, .pull-desktop-10, .pull-desktop-11, .pull-desktop-12, .pull-desktop-13, .pull-desktop-14, .pull-desktop-15, .pull-desktop-16, .pull-desktop-17, .pull-desktop-18, .pull-desktop-19, .pull-desktop-20, .pull-desktop-21, .pull-desktop-22, .pull-desktop-23, .pull-desktop-24 {
   position: relative; }
@@ -2834,7 +2843,7 @@ body {
   color: #000000; }
 
 .paintingDescription {
-  padding-top: 65px;
+  padding-top: 15px;
   position: relative; }
   .paintingDescription .user-photo {
     width: 100%;

@@ -1,15 +1,59 @@
-<div class="grid-24 u-align-center no-gutter" style="margin-top:100px;">
-        <div ng-repeat="result in history track by $index">
-            <div class="grid-24">
-                <img ng-src="{{result.base64Photo}}" width="200">
-            </div>
-            <div class="grid-24 gutter-top" ng-repeat="res in result.data.responses[0].labelAnnotations">
-                <div class="grid-12">
-                    {{res.description}}
+<div class="grid-24 u-align-left stats">
+        <h3 class="title-paint u-align-center gutter-bottom grid-24">Statistics</h3>                
+        <div class="highlight grid-24 no-gutter">
+                <div class="grid-15">
+                        <p class="auth-paint">Images Analysed</p>
+                        <!-- On affiche le nombre d'image dans l'historique, pour obtenir le nombre d'éléments de l'array history, on applique .length   -->
+                        <p class="title-paint">{{history.length}}</p>
                 </div>
-                <div class="grid-12">
-                        {{res.score}}
-                 </div>
-            </div>
+                <div class="grid-9">
+                        <p class="auth-paint">Reset</p>
+                        <p class="title-paint pointer">
+                                <!-- Définition d'un ng-click qui appelera la fonction définie dans le controlleur, permettant de vider le contenu des cookies et de la variable -->
+                                <i class="fa fa-trash-o pointer" ng-click="resetHistory();" aria-hidden="true"></i>
+                        </p>
+                </div>
+
+        </div>
+</div>
+<div class="grid-24 u-align-center no-gutter" ng-repeat="result in history track by $index">
+        <div class="grid-24 u-align-center paintingDescription no-gutter">
+                <!--  On affecte notre image Base 64 comme source de la balise image, on utilise ng-src pour que le binding s'effectue au chargement -->
+                <img class="user-photo" ng-src="{{result.base64Photo}}" />
+        </div>
+        <div class="grid-24 u-align-left gutter-top">
+                <div class="highlight grid-24 no-gutter">
+                        <div class="grid-15">
+                                <p class="auth-paint">Best Matching</p>
+                                <!-- On affiche le premier résultat en spécifiant l'index 0 : labelAnnotations[0] -->
+                                <p class="title-paint">{{result.data.responses[0].labelAnnotations[0].description}}</p>
+                        </div>
+                        <div class="grid-9">
+                                <p class="auth-paint">Probability</p>
+                                <!-- On affiche le premier score en spécifiant l'index 0 et en appelant notre fonction formatNumber -->
+                                <p class="title-paint">{{formatNumber(result.data.responses[0].labelAnnotations[0].score) + '%'}}</p>
+                        </div>
+
+                </div>
+        </div>
+        <div class="grid-24 gutter-top u-align-left gutter-bottom">
+                <div class="highlight grid-24 no-gutter">
+                        <!-- On met en place notre ng-repeat pour itérer sur tous les éléments de $scope.history.
+                             - ng-class permet d'ajouter la classe css "gutter-top" quand l'index est différent de 1
+                             - ng-if permet de masquer le premier élément, qu'on affiche differamment au dessus
+                        -->
+                        <div class="grid-24 no-gutter" ng-class="{'gutter-top' : $index != 1}" ng-repeat="res in result.data.responses[0].labelAnnotations" ng-if="$index >= 1">
+                                <div class="grid-15 no-gutter-right">
+                                        <p class="auth-paint">Detected</p>
+                                        <!-- Notre item courant est donc res -->
+                                        <p class="title-paint">{{res.description}}</p>
+                                </div>
+                                <div class="grid-9">
+                                        <p class="auth-paint">Probability</p>
+                                        <p class="title-paint">{{formatNumber(res.score) + '%'}}</p>
+                                </div>
+                        </div>
+
+                </div>
         </div>
 </div>

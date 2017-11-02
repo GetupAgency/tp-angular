@@ -1,9 +1,10 @@
+
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl : "partials/home.html",
     })
-    .when("/paintingDescription", {
+    .when("/photoDetail", {
         templateUrl : "partials/photo-result.html",
         controller : "PhotoResultCtrl"
     })

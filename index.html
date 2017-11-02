@@ -1,42 +1,63 @@
 <!doctype html>
+<!-- Notre app angular définie dans app.js 'tp-angular' -->
 <html ng-app="tp-angular">
   <head>
     <title>TP Angular JS</title>
  	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+     <!-- La librairie Angular -->
     <script src="scripts/angular.js"></script>
+    <!-- La librairie Angular Route, permettant de mettre en place la navigation -->
     <script src="scripts/angular-route.min.js"></script>
+    <!-- Notre application angular, dans laquelle nous injecterons les modules utilisés -->
     <script src="scripts/app.js"></script>
+    <!-- Notre fichier de configuration, utile pour définir des variables globales -->
     <script src="scripts/config.js"></script>
+    <!-- Notre fichier de routing -->
     <script src="scripts/routes.js"></script>
-    <script src="scripts/services/exif-restorer.js"></script>
-    <script src="scripts/services/webStorage.js"></script>
-    <script src="scripts/services/angularService.js"></script>
-    <script src="scripts/controllers/GlobalController.js"></script>
-    <script src="scripts/controllers/LoginController.js"></script>
-    <script src="scripts/controllers/PhotoResultController.js"></script>
-    <script src="scripts/controllers/HistoryController.js"></script>
+    <!-- Notre script permettant de convertir les photos prises au format EXIF en JPEG ou autre -->
+    <script src="scripts/services/exif-restorer.js"></script>    
+    <!-- Notre directive permettant de lancer l'appareil et de décoder la photo prise -->
     <script src="scripts/directives/camera.js"></script>
+    <!-- Notre librairie permettant de stocker localement des variables avec une persistance -->
+    <script src="scripts/services/webStorage.js"></script>
+    <!-- Notre service principal -->
+    <script src="scripts/services/angularService.js"></script>
+    <!-- Notre controlleur principal -->
+    <script src="scripts/controllers/GlobalController.js"></script>
+    <!-- Notre controlleur lié à la page détail d'une photo -->
+    <script src="scripts/controllers/PhotoResultController.js"></script>
+    <!-- Notre controlleur lié à la page history -->
+    <script src="scripts/controllers/HistoryController.js"></script>
 
 
+    <!-- une lib css pour avoir des icones interprêtés comme une police d'écriture -->
     <link href="styles/font-awesome.min.css" rel="stylesheet">
     <link href="styles/flaticon.css" rel="stylesheet">
+    <!-- la feuille de style principale
+      Il est recommandé d'utiliser du CSS orienté objet pour développer ce genre d'application,
+      du SASS ou du LESS
+    -->
     <link rel="stylesheet" href="styles/app.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
 
   </head>
 
-
+  <!-- Déclaration de notre controlleur principal -->
   <body ng-controller="GlobalCtrl">
-
+    <!-- Inclusion de notre menu toujours visible -->
     <div ng-include="'partials/menu.html'"></div>
-
+    <!-- Div visible uniquement lorsque $rootScope.isLoading = true -->
     <div ng-show="isLoading" class="loading grid-24 l-gutter-top"> 
-      <div class="grid-24 u-align-center no-gutter l-gutter-top">
+      <div class="grid-24 u-align-center no-gutter loadingDiv">
         <i class="t-color-light fa fa-spinner fa-pulse fa-3x fa-fw"></i>
       </div>
     </div>
-
+    <!-- Div contenant l'essentiel de notre application
+      Notre routing va permettre d'injecter pour chaque chemin (/, /photoResult, /history)
+      - une partial HTML
+      - un controlleur javascript dédié
+    -->
     <div class="main-view" data-ng-view></div>
 
   </body>
