@@ -5,7 +5,5 @@ app.controller('PhotoResultCtrl', function ($scope, $location, webStorage, angul
   */   
  $scope.googleResult = angularService.photoTaken.data.responses[0].labelAnnotations;
  $scope.pictureBase64 = angularService.photoTaken.base64Photo;
-
-
  
 });
