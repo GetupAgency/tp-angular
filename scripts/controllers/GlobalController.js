@@ -1,4 +1,4 @@
-app.controller("GlobalCtrl", function($scope,$location,$route,angularService,webStorag,$rootScope) {
+app.controller("GlobalCtrl", function($scope,$location,$route,angularService,webStorage,$rootScope) {
   /* Méthode applée par notre directive "camera" une fois la photo interceptée */
   $scope.getPhoto = function(photoPromise) {
     /** photoPromise est une méthode "déférée", qui une fois sont traitement réalisé, est notifié de sa promesse par le handler "then" ci dessous.
@@ -17,6 +17,7 @@ app.controller("GlobalCtrl", function($scope,$location,$route,angularService,web
         /^data:image\/(png|jpg|jpeg);base64,/,
         ""
       );
+      
       /** On appelle la méthode sendPicture de notre service */
       request = angularService
         .sendPicture(base64WithoutHeader)
@@ -36,6 +37,7 @@ app.controller("GlobalCtrl", function($scope,$location,$route,angularService,web
             /** On ajoute les infos de la photo dans notre historique */
             angularService.history.push(angularService.photoTaken);
             webStorage.set("history", angularService.history);
+            
             /** On supprime notre cookie de la photo si il y en avait un */
             if (webStorage.has("photoTaken")) {
               webStorage.remove("photoTaken");
@@ -86,4 +88,15 @@ app.controller("GlobalCtrl", function($scope,$location,$route,angularService,web
   $scope.formatNumber = function(nb) {
     return Math.round(nb * 100);
   };
+
+  $scope.translateText = function(textToTranslate){
+
+    angularService.translateText(textToTranslate)
+    .then(function(data){
+        return data.data;
+    })
+     
+  }
+
+
 });

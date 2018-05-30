@@ -30,6 +30,32 @@ app.factory('angularService', ['$q', '$rootScope', '$http', 'webStorage', functi
         return deferred.promise;
     };
 
+    SharedProfile.translateText = function (textToTranslate, lang) {
+        var deferred = $q.defer();
+        $http({
+            method: "POST",
+            data : {
+                q : textToTranslate,
+                target : lang
+            },
+            url: Config.urlServiceTranslate
+        }).then(function (success) {
+            deferred.resolve(success);
+        }, function (error) {
+        });
+        return deferred.promise;
+    };
+    SharedProfile.getListCountries = function () {
+        var deferred = $q.defer();
+        $http({
+            method: "GET",
+            url: Config.urlCountries+"&target=fr"
+        }).then(function (success) {
+            deferred.resolve(success);
+        }, function (error) {
+        });
+        return deferred.promise;
+    };
     // Si une photo a été prise, on l'enregistre
     if (webStorage.has("photoTaken")) {
         SharedProfile.photoTaken = webStorage.get("photoTaken");
